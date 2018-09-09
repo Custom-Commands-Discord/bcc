@@ -7,8 +7,7 @@ Check out our GitHub Repo by [clicking here](https://github.com/Custom-Commands-
 
 If you'd like to chat with us but don't have a Discord account go to our [Discord Chat](/chat) powered by [WidgetBot](https://widgetbot.io)!
 ## Partners
-=======
- [**Dyno Custom Commands**](https://discord.gg/d2F2zaf) 
+[**Dyno Custom Commands**](https://discord.gg/d2F2zaf) 
 
 The sister to this service! We make custom commands for Dyno that anyone can use.
 ## Announcements
