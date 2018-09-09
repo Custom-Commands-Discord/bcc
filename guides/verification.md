@@ -1,36 +1,24 @@
 # Verification Set-up
-> **CAUTION!**
-> **Still buggy!**
-> **USE AT OWN RISH**
 
-{delete} 
-{trim;
-  {if;!=;{channelid};452692972824428544;
-{return}}
+Welcome!
+This guide will help you set up your verification system!
 
-{execcc;makecode}
-    {dm;{userid};{trim;{execcc;getcodemessagedm}}}
-{//;verifies the message, resets after 5 minutes}
-{set;~a;{waitmessage;;;{bool;==;{clean;{messagetext}};{clean;{get;~joincode}}};300}}
-{apply;delete;{get;~a}}
+## Step 1:
 
-{//;verifies code}
-{void;{set;~userid;{userid}}
-      {roleremove;452692932466573332;{get;~userid}}
-      {roleadd;452692927743918101;{get;~userid}}
-      {execcc;verifyrolesadd}
-      {roleremove;452692932466573332;{get;~userid}}
-      {roleadd;452692927743918101;{get;~userid}}
-      {send;452692979082330115;;
-        {embedbuild;
-          author.name:{username;{get;~userid}}#{userdiscrim;{get;~userid}};
-          author.icon_url:{useravatar;{get;~userid}};
-          title:Welcome to {guildname}, {usernick}!;
-          description:We hope you enjoy being here, for more information, use `b!bcc help`! in <#452692995389521934>!;
-          color:00ff00;
-          footer.text:{guildname};
-          footer.icon_url:{guildicon};
-          timestamp:{time};
+Run the tag `getcode_setup` on your guild and follow the directions to set up the variables we will be using.
 
-        }    
-    }
+
+
+# Basic Method
+> Use this method only if you want a verification system that you don't need to tinker with, otherwise use the [Advanced Method](/guides/verification##Step%202:) 
+> (You can change using the advanced or basic method at any time!)
+
+## Step 2:
+First we are going to make the verification command! This is the command users will type to receive their verification code! To make it easier to add to your server, we have made a tag that can be used, which will automatically add everything.
+
+<iframe class="code" src="/commands/getcode.txt" width="100%" height="200" frameborder="0"></iframe>
+
+
+# Advanced Method
+
+## Step 2
